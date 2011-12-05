@@ -2,6 +2,15 @@
 
 {% block content %}
   <h1>Todo today</h1>
+	<table id="todo">
+	{% for task in tasks %}
+		<tr>
+			<td>{{ task.title }}</td>
+			<td>{{ task.pomodoros }}</td>
+		</tr>
+
+	{% endfor %}
+	</table>
 
 {% endblock%}
 

@@ -7,6 +7,11 @@
 		<title>{% block title %} {% endblock %} </title>
 	</head>
 	<body>
+	  <ul id="nav">
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="/inventory">Inventory</a></li>
+      <li><a href="/todo-today">Todo today</a></li>
+	  </ul>
 		<div id="body">
 			{% block body %}
 				<div id="content">

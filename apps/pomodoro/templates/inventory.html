@@ -2,16 +2,13 @@
 
 {% block content %}
   <h1>Inventory</h1>
-	<div id="inventory">
-		<table id="table_inventory">
-		{% for task in tasks_in_inventory %}
-			<tr>
-				<td> {{ task.title }} </td>
-				<td> {{ task.num_pomodoros }} </td>
-			</tr>
-
-		{% endfor %}
-		</table>
-	</div>
+	<table id="inventory">
+	  {% for task in tasks %}
+		  <tr>
+			  <td>{{ task.title }}</td>
+			  <td>{{ task.pomodoros }}</td>
+		  </tr>
+	  {% endfor %}
+	</table>
 {% endblock%}
 
